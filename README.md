@@ -20,16 +20,16 @@ To-do list:
 
 
 ## Data collection
-1. Yelp Fusion API: accessed stores using "bubble tea" term, at Chicago, IL location, and is_closed status is FALSE
-2. Google Maps: only 20 entries available, not used in analysis
-3. Chicago Population Counts dataset: from [Chicago City Data Portal](https://data.cityofchicago.org/Health-Human-Services/Chicago-Population-Counts/85cm-7uqa)
+1. Yelp Fusion API: `yelp.py` to accessed stores using "bubble tea" term, at Chicago, IL location, and is_closed status is FALSE; data stored in `yelp_data_file.csv`
+2. Google Maps: `google_map.py` to accessed stores data, only 20 entries available (stored in `google_map_data_file.csv`), not used in analysis
+3. Chicago Population Counts dataset: from [Chicago City Data Portal](https://data.cityofchicago.org/Health-Human-Services/Chicago-Population-Counts/85cm-7uqa), data stored in `Chicago_Population_Counts.csv`
 
 ## Data Cleaning
-Cleaned yelp_data_file.csv
+Cleaned `yelp_data_file.csv`
 1. Price data was missing in some entries. Reorganized columns "location", "phone", "display_phone", "distance".
 2. Aggregated yelp data by region. 
 
-Cleaned population data
+Cleaned `Chicago_Population_Counts.csv`
 1. Extracted 2019 data and kept only data at zip code level.
 2. Merged population data and yelp data based on zip codes in population data. 
 
